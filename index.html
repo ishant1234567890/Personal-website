@@ -3,86 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishant Adhikari</title>
+    <title>Ishant Adhikari/title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <style>
         body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #1f1f1f;
+        }
+        .card {
             background-color: #1e1e1e;
-            color: #c9d1d9;
-            font-family: "Courier New", Courier, monospace;
+            border: none;
+            color: #ffffff;
         }
-        .glow-effect {
-            text-shadow: 0 0 5px #58a6ff, 0 0 10px #58a6ff, 0 0 20px #58a6ff;
+        .btn-primary {
+            background-color: #6200ea;
+            border: none;
         }
-        .profile-img {
-            border-radius: 50%;
-            box-shadow: 0 0 15px #0d1117;
-        }
-        .section-divider {
-            border-top: 2px solid #30363d;
-            margin: 2rem 0;
+        .btn-primary:hover {
+            background-color: #3700b3;
         }
         footer {
-            background-color: #0d1117;
-            color: #58a6ff;
-            text-align: center;
-            padding: 1rem 0;
-            border-top: 1px solid #30363d;
+            background-color: #1f1f1f;
+            color: #bbb;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+        .social-icons a {
+            font-size: 2rem;
+            color: #ffffff;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #6200ea;
+        }
+        .about-image {
+            max-width: 75%;
         }
     </style>
 </head>
-<body> 
-
-    <div class="container py-4">
-        <div class="text-center mb-4">
-            <img src="img/profile.jpg" alt="Profile Picture" class="profile-img img-fluid" style="width: 200px; height: 200px;">
-            <h1 class="text-primary mt-3">Ishant Adhikari</h1>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ishant Adhikari</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div class="d-flex justify-content-center gap-3 mb-4">
-            <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline-primary">GitHub</a>
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
-            <a href="https://twitter.com/yourusername" target="_blank" class="btn btn-outline-primary">Twitter</a>
-            <a href="https://yourwebsite.com" target="_blank" class="btn btn-outline-primary">Website</a>
+    <!-- Header Section -->
+    <header class="py-5 text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to My Portfolio</h1>
+            <p class="lead">Dedicated QA Tester with a passion for ensuring high-quality software solutions.</p>
         </div>
+    </header>
 
-        <section id="about">
-            <h2 class="text-primary text-center">About Me</h2>
-            <p class="text-center">Hello! I'm a passionate software developer with experience in creating innovative solutions to complex problems. I enjoy working on both front-end and back-end development, and I am constantly exploring new technologies to expand my skill set.</p>
-            <div class="section-divider"></div>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/profile.jpg" class="img-fluid rounded about-image" alt="QA Tester Image">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>I am a QA Tester with over 5 years of experience in manual and automated testing. My expertise lies in identifying bugs, improving software quality, and ensuring seamless user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2 class="text-primary text-center">Projects</h2>
-            <ul class="list-group">
-                <li class="list-group-item bg-dark text-light"><strong>Project 1:</strong> Description of project 1 and technologies used.</li>
-                <li class="list-group-item bg-dark text-light"><strong>Project 2:</strong> Description of project 2 and technologies used.</li>
-                <li class="list-group-item bg-dark text-light"><strong>Project 3:</strong> Description of project 3 and technologies used.</li>
-            </ul>
-            <div class="section-divider"></div>
-        </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <i class="bi bi-bug text-primary display-4"></i>
+                    <h5>Manual Testing</h5>
+                    <p>Thorough and meticulous in identifying software issues.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-gear text-primary display-4"></i>
+                    <h5>Automated Testing</h5>
+                    <p>Experienced in using tools like Selenium and Appium.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-pc-display text-primary display-4"></i>
+                    <h5>Performance Testing</h5>
+                    <p>Skilled in testing software under heavy loads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="experience">
-            <h2 class="text-primary text-center">Work Experience</h2>
-            <ul class="list-group">
-                <li class="list-group-item bg-dark text-light"><strong>Job Title 1:</strong> Company Name (Year - Year) - Brief description of your role and achievements.</li>
-                <li class="list-group-item bg-dark text-light"><strong>Job Title 2:</strong> Company Name (Year - Year) - Brief description of your role and achievements.</li>
-            </ul>
-            <div class="section-divider"></div>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Automated testing framework for e-commerce platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Manual testing for a healthcare application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Performance testing for cloud-based solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="other-info">
-            <h2 class="text-primary text-center">Other Information</h2>
-            <p class="text-center">Feel free to include additional information here, such as certifications, volunteering experience, or hobbies.</p>
-        </section>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <div class="text-center mt-4">
+                <p>Connect with me on:</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Ishant Adhikari. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 QA Tester Portfolio. All Rights Reserved.</p>
+            <p>
+                <a href="#">LinkedIn</a> |
+                <a href="#">GitHub</a> |
+                <a href="#">Twitter</a>
+            </p>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
