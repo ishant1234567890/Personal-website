@@ -1,197 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishant Adhikari</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-        }
-        .navbar {
-            background-color: #1f1f1f;
-        }
-        .card {
-            background-color: #1e1e1e;
-            border: none;
-            color: #ffffff;
-        }
-        .btn-primary {
-            background-color: #6200ea;
-            border: none;
-        }
-        .btn-primary:hover {
-            background-color: #3700b3;
-        }
-        footer {
-            background-color: #1f1f1f;
-            color: #bbb;
-            padding: 20px 0;
-        }
-        footer a {
-            color: #bbb;
-            text-decoration: none;
-        }
-        footer a:hover {
-            color: #fff;
-        }
-        .social-icons a {
-            font-size: 2rem;
-            color: #ffffff;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #6200ea;
-        }
-        .about-image {
-            max-width: 75%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ML Engineer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1117;
+      color: #d3d3d3;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #161b22;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #00ffcc;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: #161b22;
+      color: #d3d3d3;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header img {
+        float: right;
+        display: flexbox;
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 0rem; 
+       
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #d3d3d3;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    footer {
+      background-color: #161b22;
+      color: #d3d3d3;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 1.1rem;
+    }
+    .contact-info p {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0;
+    }
+    .contact-info i {
+      color: #00ffcc;
+    }
+    .header-email {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.header-email button {
+  background-color: #00ffcc;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #0d1117;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.header-email button:hover {
+  background-color: #00ccaa;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Ishant Adhikari</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <header>
+    <img src="img/profile.jpeg" alt="User Photo" >
+    <h1>Ishant Adhikari</h1>
+    <p>Machine Learning Engineer | 1 Year Experience</p>
+    <p><p class="header-email">
+
+    <a id="email-button" class="email-button" href="mailto: wnishanta1999@gmail.com">Email Me </a>
+   
+</p>
+</p>
+    <nav>
+      <a href="#about">About</a>
+      
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <!-- Header Section -->
-    <header class="py-5 text-center">
-        <div class="container">
-            <h1 class="display-4">Welcome to My Portfolio</h1>
-            <p class="lead">Dedicated QA Tester with a passion for ensuring high-quality software solutions.</p>
-        </div>
-    </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate Machine Learning Engineer with 1 year of hands-on experience in building, training, and deploying machine learning models for real-world applications. I have a strong foundation in Python, scikit-learn, pandas, and data visualization tools like Matplotlib and Seaborn. I enjoy transforming raw data into actionable insights and creating predictive models that solve meaningful problems. With a curiosity-driven mindset, I continuously explore new tools and techniques in the ML ecosystem to stay ahead in this rapidly evolving field.
+    </p>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="img/profile.jpg" class="img-fluid rounded about-image" alt="QA Tester Image">
-                </div>
-                <div class="col-md-6">
-                    <h2>About Me</h2>
-                    <p>I am a QA Tester with over 5 years of experience in manual and automated testing. My expertise lies in identifying bugs, improving software quality, and ensuring seamless user experiences.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>1. Movie Recommendation System</h3>
+        <p>A content-based recommendation engine using NLP and cosine similarity to suggest movies based on user preferences.</p>
+        <a href="https://github.com/ishant1234567890/Netflix-Recommendation-System">Project Source Code</a>
+    </div>
+      <div class="card">
+        <h3>2. AGRO Dataset Exploration</h3>
+        <p>Explored agricultural yield data across various crops and regions, uncovering patterns and insights useful for farming policy and productivity analysis.</p>
+        <a href="https://github.com/ishant1234567890/Agro_Dataset_Exploration">Project Source Code</a>
+    
+    </div>
+      <div class="card">
+        <h3>3. National Anthem Analysis</h3>
+        <p>Analyzed national anthems from around the world using NLP and word clouds to discover similarities in themes and language across countries.</p>
+        <a href="https://github.com/ishant1234567890/National_Anthem_Classification">Project Source Code</a>
+          
+    </div>
+      <div class="card">
+        <h3>4. Web Scraping Books store </h3>
+        <p>Built various web scraping tools using Python libraries like BeautifulSoup to collect structured data from websites for later analysis, cleaning, and storage.</p>
+        <a href="https://github.com/ishant1234567890/Web-Scrapping-Book-Store">Project Source Code</a>
+    
+    </div>
+      <div class="card">
+        <h3>5. Web Scraping Stocks</h3>
+        <p>Built various web scraping tools using Python libraries like BeautifulSoup to collect structured data from websites for later analysis, cleaning, and storage.</p>
+       <a href="https://github.com/ishant1234567890/Web-Scrapping-Stocks">Project Source Code</a>
+    
+    </div>
+      <div class="card">
+        <h3>6. Music Recommendation System (Toy Dataset)</h3>
+        <p>Developed a basic music recommender using a toy dataset to demonstrate recommendation logic and user preference modeling.</p>
+       <a href="https://github.com/ishant1234567890/Music-Recommendation-System">Project Source Code</a>
+    
+    </div>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2 class="text-center">Skills</h2>
-            <div class="row text-center mt-4">
-                <div class="col-md-4">
-                    <i class="bi bi-bug text-primary display-4"></i>
-                    <h5>Manual Testing</h5>
-                    <p>Thorough and meticulous in identifying software issues.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="bi bi-gear text-primary display-4"></i>
-                    <h5>Automated Testing</h5>
-                    <p>Experienced in using tools like Selenium and Appium.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="bi bi-pc-display text-primary display-4"></i>
-                    <h5>Performance Testing</h5>
-                    <p>Skilled in testing software under heavy loads.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="card">
+      <h3>Machine Learning Engineer — Saral Lagani</h3>
+      <p><strong>Duration:</strong> June 2024 – Present</p>
+      <ul>
+        <li>Joined as an intern at a fintech startup focused on stock market analytics and later transitioned to a full-time ML Engineer role.</li>
+        <li>Developed and optimized machine learning models for financial forecasting and stock pattern recognition.</li>
+        <li>Worked on end-to-end ML pipelines including data cleaning, feature engineering, training, and deployment.</li>
+        <li>Collaborated with data engineers and software developers to integrate models into production systems.</li>
+        <li>Used tools such as Git, Jupyter, and MLflow for experiment tracking and version control.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-dark">
-        <div class="container">
-            <h2 class="text-center">Projects</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Automated testing framework for e-commerce platforms.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Manual testing for a healthcare application.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Performance testing for cloud-based solutions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i><a href="mailto:wnishanta1999@gmai.com" target="_blank">wnishanta1999@gmail.com</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/ishant1234567890" target="_blank">Ishant Adhikari </a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ishant-adhikari-65a4431a6/" target="_blank">Ishant Adhikari</a></p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center">Contact</h2>
-            <div class="text-center mt-4">
-                <p>Connect with me on:</p>
-                <div class="social-icons">
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-github"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="container">
-            <p>&copy; 2024 Ishant Adhikari. All Rights Reserved.</p>
-            <p>
-                <a href="#">LinkedIn</a> |
-                <a href="#">GitHub</a> |
-                <a href="#">Twitter</a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer>
+    <p>&copy; 2025 Ishant Adhikari. All rights reserved.</p>
+  </footer>
 </body>
 </html>
